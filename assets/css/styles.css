@@ -101,3 +101,13 @@ body {
 .side-menu__link--paintings::before {
     content: "\e90a";
 }
+
+.card__image {
+    width: 328px;
+    height: 306px;
+    padding: 0 16px;
+}
+
+.card__info {
+    
+}
