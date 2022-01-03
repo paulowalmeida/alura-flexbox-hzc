@@ -102,12 +102,101 @@ body {
     content: "\e90a";
 }
 
-.card__image {
+.main {
+    padding: 24px 16px;
+}
+
+.main__page-title {
+    padding-bottom: 16px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden; /*if any inner element is larger than the card size, it must be hidden */
+    background-color: #2C343A;
+
+}
+
+/* .card__image {
     width: 328px;
     height: 306px;
     padding: 0 16px;
+} */
+
+.card__content {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__emphasis {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    grid-column: span 2;
+    padding-bottom: 8px;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    grid-column: span 2;
+    padding-bottom: 8px;
+}
+
+.card__profile {
+    color: #95999C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    grid-column: span 2;
+    padding-bottom: 8px;
 }
 
 .card__info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+    padding-bottom: 8px;
+}
+
+.card__info--time::before {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.card__info--views::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.card__button--play::before {
+    content: "\e90b";
+    font-size: 24px;
     
+}
+
+.card__button--emphasis {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.card__button--emphasis::before {
+    margin-right: 8px;
 }
